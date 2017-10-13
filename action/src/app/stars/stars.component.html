@@ -1,0 +1,9 @@
+<p>
+  <span *ngFor="let star of stars" class="glyphicon glyphicon-star "
+  [class.glyphicon-star-empty] = "star"></span>
+  <!--
+    含义：绑定的是css样式，要绑定到star这个变量上去。span标签是否出现，这个空星星的样式，是由star这个属性觉得的。如果star是
+    true那么，span就会多出glyphicon-star-empty这个样式，如果star 是false就不会有这个样式
+  -->
+  <span>{{rating}}星</span>
+</p>
