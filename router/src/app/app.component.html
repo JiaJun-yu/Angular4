@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <a [routerLink]="['/home']">主页</a>
+  <a [routerLink]="['/product',1]">商品详情</a>
+</div>
+<input type="button" value="商品详情" (click)="toProductDetails()">
+
+<router-outlet></router-outlet>
